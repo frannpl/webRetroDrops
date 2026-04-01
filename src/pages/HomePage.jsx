@@ -17,6 +17,7 @@ const HomePage = () => {
         <div className="absolute inset-0">
            <img 
             src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=2000" 
+            referrerPolicy="no-referrer"
             className="w-full h-full object-cover opacity-50 scale-105"
             alt="Estadio retro"
            />
@@ -99,6 +100,7 @@ const HomePage = () => {
                       className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-[1.03]"
                       alt="Camisetas retro y envío: calidad de catálogo y entrega a domicilio"
                       loading="lazy"
+                      decoding="async"
                     />
                 </div>
             </div>

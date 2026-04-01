@@ -12,6 +12,7 @@ const ProductCard = ({ jersey }) => {
           <img 
             src={jersey.img} 
             alt={`[Camiseta de ${jersey.name}]`} 
+            referrerPolicy="no-referrer"
             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
             onError={(e) => {
               e.target.onerror = null; 

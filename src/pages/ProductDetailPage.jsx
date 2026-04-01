@@ -73,6 +73,7 @@ const ProductDetailPage = () => {
               <img 
                 src={allImages[selectedImage]} 
                 alt={jersey.name}
+                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
               />
               <div className="absolute top-6 left-6 flex flex-col gap-3">
@@ -93,7 +94,7 @@ const ProductDetailPage = () => {
                     onClick={() => setSelectedImage(idx)}
                     className={`flex-shrink-0 w-24 aspect-[4/5] rounded-xl overflow-hidden border-2 transition-all ${selectedImage === idx ? 'border-amber-500' : 'border-transparent opacity-60 hover:opacity-100'}`}
                   >
-                    <img src={img} alt={`${jersey.name} view ${idx}`} className="w-full h-full object-cover" />
+                    <img src={img} alt={`${jersey.name} view ${idx}`} referrerPolicy="no-referrer" className="w-full h-full object-cover" />
                   </button>
                 ))}
               </div>
